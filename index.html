@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index11</title>
+</head>
+<body>
+<p id="tekst" ></p>
+<button onclick="losuj_dod()" > Dodatnia</button>
+<button onclick="losuj1_dod()" > Ujemna </button>
+<button onclick="losuj2_dod()" > Zero </button>
+<script>
+document.getElementById("tekst").innerHTML = "<h4>Powiedz czy liczba jest Dodatnia/Ujemna/Zero </h4>"
+let zmienna1 = Math.floor(Math.random() * 21) - 10;
+let proby = 3;
+function losuj_dod(){
+if(zmienna1 > 0){
+document.getElementById("tekst").innerText = "Brawo! Trafiłeś!"
+} else {
+document.getElementById("tekst").innerText = "Nie! To była liczba: " + zmienna1 ;
+}
+proby = proby - 1;
+if(proby === 0){
+document.getElementById("tekst").innerText = "Koniec gry! Liczba to " + zmienna1 ;  
+return;
+}
+}
+function losuj1_dod(){
+if(zmienna1 < 0){
+document.getElementById("tekst").innerText = "Brawo! Trafiłeś!"
+} else {
+document.getElementById("tekst").innerText = "Nie! To była liczba: " + zmienna1 ;
+}  
+proby = proby - 1;
+if(proby === 0){
+document.getElementById("tekst").innerText = "Koniec gry! Liczba to " + zmienna1 ;  
+return; 
+}
+}
+function losuj2_dod(){
+if(zmienna1 === 0){
+document.getElementById("tekst").innerText = "Brawo! Trafiłeś!"
+} else {
+document.getElementById("tekst").innerText = "Nie! To była liczba: " + zmienna1 ;
+}  
+proby = proby - 1;
+if(proby === 0){
+document.getElementById("tekst").innerText = "Koniec gry! Liczba to " + zmienna1 ;    
+return;
+}
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
