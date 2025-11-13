@@ -16,6 +16,7 @@ document.getElementById("tekst").innerHTML = "<h4>Gra w zgadywanke !!! Kliknij c
 let zmienna1 = Math.floor(Math.random() * 21) - 10;
 let proby = 3;
 function losuj_dod(){
+if (proby === 0) return;
 if(zmienna1 > 0){
 document.getElementById("tekst").innerText = "Brawo! Trafiłeś!"
 } else {
@@ -29,6 +30,7 @@ return;
 }
 }
 function losuj1_dod(){
+if (proby === 0) return;
 if(zmienna1 < 0){
 document.getElementById("tekst").innerText = "Brawo! Trafiłeś!"
 } else {
@@ -42,6 +44,7 @@ return;
 }
 }
 function losuj2_dod(){
+if (proby === 0) return;
 if(zmienna1 === 0){
 document.getElementById("tekst").innerText = "Brawo! Trafiłeś!"
 } else {
