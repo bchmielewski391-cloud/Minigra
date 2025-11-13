@@ -14,7 +14,6 @@
 <label><input type="radio" id="pole" >Tak</label><br>
 <label><input type="radio" id="pole" >Nie</label>
 <script>
-document.getElementById("tekst").innerHTML = "<h5>Czy gra się podobała ??</h5>"
 document.getElementById("tekst").innerHTML = "<h4>Gra w zgadywanke !!! Kliknij czy liczba jest dodatnia,ujemna czy równa zeru i musisz zgadnąć masz 3 próby powodzenia</h4>"
 let zmienna1 = Math.floor(Math.random() * 21) - 10;
 let proby = 3;
@@ -58,7 +57,7 @@ document.getElementById("tekst").innerText = "Koniec gry! Liczba to " + zmienna1
 return;
 }
 }
-
+document.getElementById("tekst").innerHTML = "<h5>Czy gra się podobała ??</h5>"
 </script>
 </body>
 </html>
